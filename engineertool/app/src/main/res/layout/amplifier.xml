@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/noninvert_amp_img"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/non_invert_amp" />
+
+        <ImageView
+            android:id="@+id/invert_amp_img"
+            android:layout_width="wrap_content"
+            android:layout_height="215dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/invert_amp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="400dp">
+
+        <EditText
+            android:id="@+id/amplifier1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="첫번째 저항(Ω)"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/amplifier2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="두번째 저항(Ω)"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/input_voltage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="입력 전압(V)"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/noninvert_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="noninv"
+            android:text="비반전증폭기 이득,전압 계산" />
+
+        <Button
+            android:id="@+id/invert_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="inv"
+            android:text="반전증폭기 이득,전압계산" />
+
+        <TextView
+            android:id="@+id/result_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전압 이득 :"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/voltage_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="출력 전압(V)"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/Caculator"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/caculator_register"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="저항_직렬/병렬 계산" />
+
+                        <Button
+                            android:id="@+id/amp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="연산 증폭기" />
+
+                        <Button
+                            android:id="@+id/capacitor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="커패시터 계산" />
+
+                        <Button
+                            android:id="@+id/btninductor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="인덕터 계산" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Imformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/mark_table"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="저항 참고 자료" />
+
+                        <Button
+                            android:id="@+id/circuit_table"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="회로도 기호" />
+
+                        <Button
+                            android:id="@+id/circuit_table2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="회로도 기호2" />
+
+                        <Button
+                            android:id="@+id/usb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="usb 포트" />
+
+                        <Button
+                            android:id="@+id/hdmi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="HDMI 포트" />
+
+                        <Button
+                            android:id="@+id/btnsimpletable"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="간단 소자 이론표" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/options"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/batterycheck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/battery_0" />
+
+                    <ImageButton
+                        android:id="@+id/music"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/piano" />
+
+                    <Button
+                        android:id="@+id/webGoogle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="구글 검색" />
+
+                    <Button
+                        android:id="@+id/webexample"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="참고 사이트 : 정보통신기술용어해설" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</androidx.constraintlayout.widget.ConstraintLayout>
