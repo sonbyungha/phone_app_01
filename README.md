@@ -99,9 +99,9 @@
 
 - 연산 증폭기 기본 회로의 증폭률 계산 지원
 
-| 연산 증폭기 |
-|-------------|
-| ![](example/ex4.jpg) |
+<p align="center">
+  <img src="example/ex4.jpg" width="300"/>
+</p>
 
 ---
 
@@ -119,8 +119,7 @@
 
 - 배터리 확인 및 기본 검색 도구
 
-| 배터리 상태 확인 |
-|------------------|
-| ![](example/ex8.jpg) |
-![예시 이미지](example/ex8.jpg)
+<p align="center">
+  <img src="example/ex8.jpg" width="300"/>
+</p>
 
