@@ -77,3 +77,24 @@
 
 - 손병하 (Byungha Son)  
 - 전자공학 기반 실용 도구 설계에 관심이 있으며, Kotlin 및 Android 개발 경험 보유
+
+
+---
+
+## 🖼️ 사용 예시 화면
+![예시 이미지](example/ex1.jpg)
+
+![예시 이미지](example/ex2.jpg)
+
+![예시 이미지](example/ex3.jpg)
+
+![예시 이미지](example/ex4.jpg)
+
+![예시 이미지](example/ex5.jpg)
+
+![예시 이미지](example/ex6.jpg)
+
+![예시 이미지](example/ex7.jpg)
+
+![예시 이미지](example/ex8.jpg)
+
