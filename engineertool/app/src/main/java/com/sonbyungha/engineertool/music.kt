@@ -22,7 +22,6 @@ class music: AppCompatActivity() {
         mp3List.add("classic1.mp3")
         mp3List.add("classic2.mp3")
         mp3List.add("classic3.mp3")
-        mp3List.add("paperplane.mp3")
         var listViewMP3 = findViewById<ListView>(R.id.listViewMP3)
         var adapter = ArrayAdapter(this,
                 android.R.layout.simple_list_item_single_choice, mp3List)
@@ -44,7 +43,6 @@ class music: AppCompatActivity() {
                 mp3List[0] -> mPlayer = MediaPlayer.create(this, R.raw.classic1)
                 mp3List[1] -> mPlayer = MediaPlayer.create(this, R.raw.classic2)
                 mp3List[2] -> mPlayer = MediaPlayer.create(this, R.raw.classic3)
-                mp3List[3] -> mPlayer = MediaPlayer.create(this, R.raw.paperplane)
             }
             mPlayer.start()
             btnPlay.isClickable = false
