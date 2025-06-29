@@ -5,7 +5,8 @@ plugins {
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    buildToolsVersion '34.0.0'
+    namespace 'com.sonbyungha.engineertool'
 
     defaultConfig {
         applicationId "com.sonbyungha.engineertool"
